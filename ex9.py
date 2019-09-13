@@ -13,8 +13,10 @@ tela = pygame.display.set_mode((640, 480))
 tela.fill(branco)
 terminou = False
 
-pygame.draw.circle(tela, azul, (315,220), 100, width)
+def desenhaCirculo():
+    pygame.draw.circle(tela, azul, (315,220), 100, width)
 
+desenhaCirculo()
 cont = 60
 clock = pygame.time.Clock()
 while not terminou:
